@@ -1,0 +1,114 @@
+<%- include('layouts/header') %>
+
+<main class="flex flex-col flex-grow items-center bg-slate-900 text-white">
+  <!-- Filters -->
+  <form
+    id="filter"
+    class="flex container mx-auto lg:w-[1024px] bg-slate-800 justify-around border border-slate-700 m-4 p-2 shadow-lg"
+  >
+    <!-- Manufacturer Filters -->
+    <div>
+      <p class="mb-1">MANUFACTURER</p>
+      <div class="space-y-2">
+        <div class="filter-option">
+          <input
+            type="radio"
+            id="logitech"
+            name="manufacturer"
+            value="logitech"
+            class="mr-2 text-sky-500 focus:ring-sky-500"
+          />
+          <label for="logitech">Logitech</label>
+        </div>
+        <div class="filter-option">
+          <input
+            type="radio"
+            id="polycom"
+            name="manufacturer"
+            value="polycom"
+            class="mr-2 text-sky-500 focus:ring-sky-500"
+          />
+          <label for="polycom">Polycom</label>
+        </div>
+        <div class="filter-option">
+          <input
+            type="radio"
+            id="crestron"
+            name="manufacturer"
+            value="crestron"
+            class="mr-2 text-sky-500 focus:ring-sky-500"
+          />
+          <label for="crestron">Crestron</label>
+        </div>
+        <div class="filter-option">
+          <input
+            type="radio"
+            id="cisco"
+            name="manufacturer"
+            value="cisco"
+            class="mr-2 text-sky-500 focus:ring-sky-500"
+          />
+          <label for="cisco">Cisco</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Configuration Filters -->
+    <div>
+      <p class="mb-1">CONFIGURATION</p>
+      <div class="space-y-2">
+        <div class="filter-option">
+          <input
+            type="radio"
+            id="conference"
+            name="configuration"
+            value="conference"
+            class="mr-2 text-sky-500 focus:ring-sky-500"
+          />
+          <label for="conference">Conference Room</label>
+        </div>
+        <div class="filter-option">
+          <input
+            type="radio"
+            id="training"
+            name="configuration"
+            value="training"
+            class="mr-2 text-sky-500 focus:ring-sky-500"
+          />
+          <label for="training">Training Room</label>
+        </div>
+        <div class="filter-option">
+          <input
+            type="radio"
+            id="distributed-audio"
+            name="configuration"
+            value="distributed-audio"
+            class="mr-2 text-sky-500 focus:ring-sky-500"
+          />
+          <label for="distributed-audio">Distributed Audio</label>
+        </div>
+        <div class="filter-option">
+          <input
+            type="radio"
+            id="digital-signage"
+            name="configuration"
+            value="digital-signage"
+            class="mr-2 text-sky-500 focus:ring-sky-500"
+          />
+          <label for="digital-signage">Digital Signage</label>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- Database Section -->
+  <section id="database" class="border border-slate-700">
+    <!-- Database content will be loaded here -->
+  </section>
+</main>
+
+<!-- Scripts -->
+<script src="/js/database.js" type="module"></script>
+<script src="/js/rom-tool.js" type="module"></script>
+
+<%- include('layouts/footer') %>
