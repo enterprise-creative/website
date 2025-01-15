@@ -2,20 +2,20 @@ export const database = [
   {
     id: 1,
     imageSource: "./assets/rally-bar-huddle.png",
-    baseprice: 2700,
+    baseprice: 12055,
     basehours: {
-      installHours: 4,
+      installHours: 2,
       configHours: 2,
       programingHours: 0,
-      managementHours: 8,
+      managementHours: 4,
     },
     manufacturer: "logitech",
     configuration: "conference",
     UCHardware: "Rally Bar Huddle System",
     mediaSources: {
-      hdmiCable: {
-        name: "HDMI Input Cable",
-        price: 50,
+      none: {
+        name: "None",
+        price: 0,
         optionHours: {
           installHours: 0,
           configHours: 0,
@@ -23,54 +23,24 @@ export const database = [
           managementHours: 0,
         },
       },
-      hdmiUsbCable: {
-        name: "HDMI & USB Input Cables",
-        price: 50,
-        optionHours: {
-          installHours: 0,
-          configHours: 0,
-          programingHours: 0,
-          managementHours: 0,
-        },
-      },
-      hdmiWallplate: {
-        name: "HDMI Wallplate",
-        price: 1200,
+      hdmiTxRx: {
+        name: "HDMI Tx/Rx",
+        price: 1500,
         optionHours: {
           installHours: 2,
           configHours: 0,
           programingHours: 0,
-          managementHours: 0,
+          managementHours: 2,
         },
       },
-      hdmiUsbWallplate: {
-        name: "HDMI & USB Wallplate",
-        price: 1800,
+      hdmiUsbTxRx: {
+        name: "HDMI & USB Tx/Rx",
+        price: 3000,
         optionHours: {
-          installHours: 2,
+          installHours: 4,
           configHours: 0,
           programingHours: 0,
-          managementHours: 0,
-        },
-      },
-      hdmiTablebox: {
-        name: "HDMI Tablebox",
-        price: 1400,
-        optionHours: {
-          installHours: 2,
-          configHours: 0,
-          programingHours: 0,
-          managementHours: 0,
-        },
-      },
-      hdmiUsbTablebox: {
-        name: "HDMI & USB Tablebox",
-        price: 1800,
-        optionHours: {
-          installHours: 2,
-          configHours: 0,
-          programingHours: 0,
-          managementHours: 0,
+          managementHours: 4,
         },
       },
     },
